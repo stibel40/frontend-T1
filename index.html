@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro.js</title>
+</head>
+<body>
+  <!--punto 1 1 - en linea -->  
+
+    <script>
+  let salario = parseFloat(prompt("Ingrese el salario del trabajador:"));
+  let descuentoSalud = salario * 0.04;
+  let descuentoPension = salario * 0.07;
+  let salarioFinal = salario - descuentoSalud - descuentoPension;
+
+  alert("Descuento por salud: $" + descuentoSalud.toFixed(2) +
+        "\nDescuento por pensión: $" + descuentoPension.toFixed(2) +
+        "\nSalario final: $" + salarioFinal.toFixed(2));
+    </script>
+
+    <!--punto 2  -->
+
+    <script>
+  let base = parseFloat(prompt("Ingrese la base del triángulo:"));
+  let altura = parseFloat(prompt("Ingrese la altura del triángulo:"));
+  let area = (base * altura) / 2;
+
+  alert("El área del triángulo es: " + area.toFixed(2));
+</script>
+
+<!--punto 3  -->
+
+<script>
+  let num1 = parseFloat(prompt("Ingrese el primer número:"));
+  let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+  alert("Suma: " + (num1 + num2) +
+        "\nResta: " + (num1 - num2) +
+        "\nMultiplicación: " + (num1 * num2) +
+        "\nDivisión: " + (num1 / num2).toFixed(2) +
+        "\nMódulo: " + (num1 % num2));
+</script>
+
+<!--punto 4  -->
+
+<script>
+  let horasNormales = parseFloat(prompt("Ingrese número de horas normales trabajadas:"));
+  let horasExtras = parseFloat(prompt("Ingrese número de horas extras trabajadas:"));
+  let valorHoraNormal = parseFloat(prompt("Ingrese el valor por hora normal:"));
+  let valorHoraExtra = parseFloat(prompt("Ingrese el valor por hora extra:"));
+
+  let sueldo = (horasNormales * valorHoraNormal) + (horasExtras * valorHoraExtra);
+
+  alert("El sueldo mensual es: $" + sueldo.toFixed(2));
+</script>
+
+<!--punto 5  -->
+
+<script>
+  let precio = parseFloat(prompt("Ingrese el precio del producto sin IVA:"));
+  let iva = precio * 0.19;
+  let total = precio + iva;
+
+  alert("IVA (19%): $" + iva.toFixed(2) +
+        "\nPrecio sin IVA: $" + precio.toFixed(2) +
+        "\nTotal a pagar: $" + total.toFixed(2));
+</script>
+<!--punto 6  -->
+
+<script>
+  let hombres = parseInt(prompt("Ingrese el número de alumnos hombres:"));
+  let mujeres = parseInt(prompt("Ingrese el número de alumnas mujeres:"));
+  let total = hombres + mujeres;
+
+  let porcentajeHombres = (hombres / total) * 100;
+  let porcentajeMujeres = (mujeres / total) * 100;
+
+  alert("Porcentaje de hombres: " + porcentajeHombres.toFixed(2) + "%" +
+        "\nPorcentaje de mujeres: " + porcentajeMujeres.toFixed(2) + "%");
+</script>
+
+<!--punto 7  -->
+
+<script>
+  let nota1 = parseFloat(prompt("Ingrese la primera nota (1 a 5):"));
+  let nota2 = parseFloat(prompt("Ingrese la segunda nota (1 a 5):"));
+  let nota3 = parseFloat(prompt("Ingrese la tercera nota (1 a 5):"));
+
+  let promedio = (nota1 + nota2 + nota3) / 3;
+
+  alert("El promedio del alumno es: " + promedio.toFixed(2));
+</script>
+
+
+
+
+
+   
+     
+</body>
+ <script src="intro.js"></script>
+</html>
